@@ -1,9 +1,7 @@
 package pro.buildmysoftware.webflux;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration;
 
 /**
  * Application bootstrapper.
@@ -12,7 +10,6 @@ import org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoCo
  *
  */
 @SpringBootApplication
-@EnableAutoConfiguration(exclude = EmbeddedMongoAutoConfiguration.class)
 public class SpringWebfluxApplication
 {
 	/**
